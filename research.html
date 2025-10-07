@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research | Cognitive Robotics Lab</title>
+    
+    <!-- Meta Information -->
+    <meta name="description" content="Explore the core research pillars at the Cognitive Robotics Lab (CRL), from foundational Machine Learning to applied Healthcare AI and autonomous systems.">
+    <meta name="keywords" content="AI Research, Machine Learning, Computer Vision, Reinforcement Learning, Robotics, Healthcare AI, Cognitive Robotics Lab">
+
+    <!-- External Dependencies -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body class="antialiased">
+
+    <!-- Signature Logo -->
+    <a href="index.html">
+        <img src="assets/images/logo.png" alt="Lab Logo" id="signature-logo" class="interactive">
+    </a>
+    
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle" class="hover:text-accent-red transition-colors duration-200 text-2xl focus:outline-none interactive">
+        <!-- Icon is set by JS -->
+    </button>
+
+    <!-- Main Content -->
+    <div id="main-content">
+        <!-- Header -->
+        <header class="relative w-full h-[60vh] overflow-hidden">
+            <!-- Full-width Background Image -->
+            <div class="absolute inset-0 w-full h-full">
+                <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                     alt="Research Background" 
+                     class="w-full h-full object-cover">
+                <!-- Dark Overlay for better text visibility -->
+                <div class="absolute inset-0 bg-black/50"></div>
+            </div>
+            
+            <!-- Centered Content -->
+            <div class="relative z-10 w-full h-full flex items-center justify-center text-center">
+                <div class="px-8">
+                    <h1 class="text-5xl md:text-7xl font-bold tracking-wider mb-4 text-white">RESEARCH NEXUS</h1>
+                    <p class="text-xl md:text-2xl font-['Roboto_Mono'] normal-case text-gray-200">Advancing the Theoretical and Applied Frontiers of AI</p>
+                </div>
+            </div>
+        </header>
+
+        <main class="container">
+            <!-- Navigation Bar Wrapper -->
+            <div id="nav-wrapper" class="py-4 my-10">
+                <nav class="max-w-5xl mx-auto bg-card/85 backdrop-blur-md rounded-lg border border-border-color shadow-md">
+                    <div class="max-w-7xl mx-auto px-4">
+                        <div class="flex justify-center items-center">
+                            <!-- Desktop Menu -->
+                            <div class="hidden md:flex items-center">
+                                <ul class="flex items-center space-x-4 lg:space-x-6 text-sm py-2">
+                                    <li><a href="index.html" class="hover:text-primary-color transition-colors duration-200">Home</a></li>
+                                    <li><a href="research.html" class="text-primary-color font-bold transition-colors duration-200">Research</a></li>
+                                    <li><a href="projects.html" class="hover:text-primary-color transition-colors duration-200">Projects</a></li>
+                                    <li><a href="publications.html" class="hover:text-primary-color transition-colors duration-200">Publications</a></li>
+                                    <li><a href="team.html" class="hover:text-primary-color transition-colors duration-200">Team</a></li>
+                                    <li><a href="contact.html" class="hover:text-primary-color transition-colors duration-200">Contact</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Mobile Menu Button -->
+                            <div class="md:hidden flex items-center w-full justify-center py-2">
+                                <button id="mobile-menu-button" class="hover:text-accent-red transition-colors duration-200 text-2xl focus:outline-none">
+                                    <i class="fas fa-bars"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Menu -->
+                    <div id="mobile-menu" class="hidden md:hidden">
+                        <ul class="flex flex-col items-center space-y-4 py-4 border-t border-border-color">
+                           <li><a href="index.html" class="hover:text-primary-color transition-colors duration-200">Home</a></li>
+                           <li><a href="research.html" class="hover:text-primary-color transition-colors duration-200">Research</a></li>
+                           <li><a href="projects.html" class="hover:text-primary-color transition-colors duration-200">Projects</a></li>
+                           <li><a href="publications.html" class="hover:text-primary-color transition-colors duration-200">Publications</a></li>
+                           <li><a href="team.html" class="hover:text-primary-color transition-colors duration-200">Team</a></li>
+                           <li><a href="contact.html" class="hover:text-primary-color transition-colors duration-200">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- Research Pillar 1: Healthcare AI -->
+            <section id="healthcare-ai" class="section-divider">
+                <h2 class="text-3xl font-bold mb-4 text-center"><span class="text-accent">//</span> AI in Healthcare</h2>
+                <p class="text-center max-w-4xl mx-auto mb-12 normal-case">
+                    Our primary focus is leveraging AI to solve critical challenges in the medical domain. We develop high-resolution deep learning networks for automated disease detection from radiography images (e.g., COVID-19), create systems for assessing stroke rehabilitation, and explore novel approaches for analyzing human activity to aid in diagnosing conditions like Autism Spectrum Disorder.
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                    <img src="https://placehold.co/600x400/161b22/8b949e?text=COVID-19+X-Ray+Analysis" alt="COVID-19 X-Ray Analysis" class="w-full h-full object-cover rounded-lg border border-border-color interactive research-card">
+                    <img src="https://placehold.co/600x400/161b22/8b949e?text=Rehabilitation+Monitoring" alt="Rehabilitation Monitoring System" class="w-full h-full object-cover rounded-lg border border-border-color interactive research-card">
+                    <img src="https://placehold.co/600x400/161b22/8b949e?text=Human+Activity+Analysis" alt="Human Activity Analysis" class="w-full h-full object-cover rounded-lg border border-border-color interactive research-card">
+                </div>
+            </section>
+
+            <!-- Research Pillar 2: Medical Robotics & Vision -->
+            <section id="medical-robotics" class="section-divider">
+                <h2 class="text-3xl font-bold mb-4 text-center"><span class="text-accent">//</span> Medical Robotics & Computer Vision</h2>
+                <p class="text-center max-w-4xl mx-auto mb-12 normal-case">
+                    We explore the intersection of robotics and computer vision to create assistive technologies. Our work includes designing and developing humanoid robots and anthropomorphic hands for sign language interpretation, utilizing techniques like zero-shot and transfer learning. We also investigate skeleton-based activity recognition and use graph convolutional networks for the precise assessment of physical exercises.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                     <img src="https://placehold.co/600x400/161b22/8b949e?text=Humanoid+Robot+Signing" alt="Humanoid robot for sign language" class="w-full h-full object-cover rounded-lg border border-border-color interactive research-card">
+                     <img src="https://placehold.co/600x400/161b22/8b949e?text=Skeleton-Based+Tracking" alt="Skeleton-based activity recognition" class="w-full h-full object-cover rounded-lg border border-border-color interactive research-card">
+                </div>
+            </section>
+            
+            <!-- Research Pillar 3: Advanced Imaging & ML -->
+            <section id="advanced-imaging" class="section-divider">
+                <h2 class="text-3xl font-bold mb-4 text-center"><span class="text-accent">//</span> Advanced Imaging & Machine Learning</h2>
+                <p class="text-center max-w-4xl mx-auto mb-12 normal-case">
+                    Our lab investigates advanced imaging modalities and machine learning techniques. This includes using hyperspectral cameras for agricultural analysis and developing novel methods like color photometric stereo for non-Lambertian surfaces. We apply these foundational vision techniques to enhance data across various scientific domains.
+                </p>
+                
+                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                     <img src="https://placehold.co/600x400/161b22/8b949e?text=Hyperspectral+Imaging" alt="Hyperspectral imaging" class="w-full h-full object-cover rounded-lg border border-border-color interactive research-card">
+                     <img src="https://placehold.co/600x400/161b22/8b949e?text=3D+Surface+Reconstruction" alt="3D surface reconstruction" class="w-full h-full object-cover rounded-lg border border-border-color interactive research-card">
+                     <img src="https://placehold.co/600x400/161b22/8b949e?text=Saliency+Map+Visualization" alt="Saliency map visualization" class="w-full h-full object-cover rounded-lg border border-border-color interactive research-card">
+                 </div>
+            </section>
+
+        </main>
+
+        <footer class="text-center py-8 border-t border-border-color">
+             <p class="text-sm">&copy; <span id="current-year"></span> Cognitive Robotics Lab. All Rights Reserved.</p>
+             <p class="text-xs mt-1">Last Transmission: <span id="current-time"></span></p>
+        </footer>
+    </div>
+
+    <!-- Custom Cursor Elements -->
+    <div id="cursor-dot"></div>
+    <div id="cursor-outline"></div>
+
+    <!-- Custom JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

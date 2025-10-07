@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognitive Robotics Lab | Pioneering Intelligent Systems</title>
+    
+    <!-- Meta Information -->
+    <link rel="icon" href="https://placehold.co/32x32/0d1117/e6edf3?text=CRL" type="image/x-icon">
+    <meta name="description" content="The Cognitive Robotics Lab (CRL) is a collective of researchers and engineers dedicated to advancing the frontiers of AI, Machine Learning, Computer Vision, and Healthcare AI.">
+    <meta name="keywords" content="Cognitive Robotics, CRL, AI, Machine Learning, Deep Learning, Reinforcement Learning, Computer Vision, Healthcare AI, Research Lab, Autonomous Systems">
+
+    <!-- External Dependencies -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body class="antialiased">
+
+    <!-- Signature Logo -->
+    <a href="index.html">
+        <img src="assets/images/logo.png" alt="Lab Logo" id="signature-logo" class="interactive">
+    </a>
+    
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle" class="hover:text-accent-red transition-colors duration-200 text-2xl focus:outline-none interactive">
+        <!-- Icon is set by JS -->
+    </button>
+
+    <!-- Main Content -->
+    <div id="main-content">
+        <!-- Header with Dynamic Background -->
+        <header class="hero-bg min-h-screen flex items-center justify-center text-center p-8 overflow-hidden">
+            <!-- Background Video -->
+            <video autoplay loop muted playsinline class="hero-background-video">
+                <source src="assets/videos/homepage_heading_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <!-- Overlay for text readability -->
+            <div class="hero-overlay"></div>
+
+            <!-- Content -->
+            <div class="relative hero-content">
+                <h1 class="text-5xl md:text-7xl font-bold tracking-wider mb-4">Cognitive Robotics Lab</h1>
+                <p class="text-xl md:text-2xl font-['Roboto_Mono'] normal-case">
+                    Engineering the Next Frontier of <span id="toggling-title">Artificial Intelligence</span>
+                </p>
+                <p class="mt-4 max-w-2xl mx-auto text-lg font-['Roboto_Mono'] normal-case">
+                    We build intelligent, autonomous systems that solve complex real-world problems in healthcare, robotics, and beyond.
+                </p>
+                <div class="mt-8">
+                    <a href="research.html" class="glow-button py-3 px-8 rounded-md font-bold uppercase tracking-wider">
+                        Explore Research
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main class="container">
+            <!-- Navigation Bar Wrapper -->
+            <div id="nav-wrapper" class="sticky top-0 z-50 py-4 mb-10">
+                <nav class="max-w-5xl mx-auto bg-card/85 backdrop-blur-md rounded-lg border border-border-color shadow-md">
+                    <div class="max-w-7xl mx-auto px-4">
+                        <div class="flex justify-center items-center">
+                            <!-- Desktop Menu -->
+                            <div class="hidden md:flex items-center">
+                                <ul class="flex items-center space-x-4 lg:space-x-6 text-sm py-2">
+                                    <li><a href="index.html" class="text-primary-color font-bold transition-colors duration-200">Home</a></li>
+                                    <li><a href="research.html" class="hover:text-primary-color transition-colors duration-200">Research</a></li>
+                                    <li><a href="projects.html" class="hover:text-primary-color transition-colors duration-200">Projects</a></li>
+                                    <li><a href="publications.html" class="hover:text-primary-color transition-colors duration-200">Publications</a></li>
+                                    <li><a href="team.html" class="hover:text-primary-color transition-colors duration-200">Team</a></li>
+                                    <li><a href="contact.html" class="hover:text-primary-color transition-colors duration-200">Contact</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Mobile Menu Button -->
+                            <div class="md:hidden flex items-center w-full justify-center py-2">
+                                <button id="mobile-menu-button" class="hover:text-accent-red transition-colors duration-200 text-2xl focus:outline-none">
+                                    <i class="fas fa-bars"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Menu -->
+                    <div id="mobile-menu" class="hidden md:hidden">
+                        <ul class="flex flex-col items-center space-y-4 py-4 border-t border-border-color">
+                           <li><a href="index.html" class="hover:text-primary-color transition-colors duration-200">Home</a></li>
+                           <li><a href="research.html" class="hover:text-primary-color transition-colors duration-200">Research</a></li>
+                           <li><a href="projects.html" class="hover:text-primary-color transition-colors duration-200">Projects</a></li>
+                           <li><a href="publications.html" class="hover:text-primary-color transition-colors duration-200">Publications</a></li>
+                           <li><a href="team.html" class="hover:text-primary-color transition-colors duration-200">Team</a></li>
+                           <li><a href="contact.html" class="hover:text-primary-color transition-colors duration-200">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- Lab Mission Section -->
+            <section id="mission" class="section-divider">
+                <h2 class="text-3xl font-bold mb-8 text-center"><span class="text-accent">//</span> Our Mission</h2>
+                <div class="max-w-5xl mx-auto text-lg text-center">
+                    <p class="mb-4 font-['Roboto_Mono'] normal-case">
+                        Our lab is dedicated to pioneering fundamental research in artificial intelligence and translating our discoveries into impactful real-world applications. We focus on creating robust, explainable, and ethical AI systems to tackle grand challenges in science, healthcare, and autonomous systems, fostering an open and collaborative research environment.
+                    </p>
+                </div>
+            </section>
+            
+            <!-- Research Areas Section -->
+            <section id="research-areas" class="section-divider">
+                <h2 class="text-3xl font-bold mb-12 text-center"><span class="text-accent">//</span> Core Research Areas</h2>
+                <div class="max-w-5xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
+                    <!-- Area 1 -->
+                    <div class="bg-card p-6 rounded-lg border border-transparent hover:border-accent-red transition-colors duration-300 interactive">
+                        <i class="fas fa-brain text-4xl text-accent-red mb-4"></i>
+                        <h3 class="text-xl mb-2 normal-case">Deep Learning</h3>
+                        <p class="text-sm normal-case">Developing novel architectures and training methodologies for complex pattern recognition tasks.</p>
+                    </div>
+                    <!-- Area 2 -->
+                    <div class="bg-card p-6 rounded-lg border border-transparent hover:border-accent-red transition-colors duration-300 interactive">
+                        <i class="fas fa-robot text-4xl text-accent-red mb-4"></i>
+                        <h3 class="text-xl mb-2 normal-case">Reinforcement Learning</h3>
+                        <p class="text-sm normal-case">Creating agents that learn optimal behaviors through interaction and feedback in dynamic environments.</p>
+                    </div>
+                    <!-- Area 3 -->
+                    <div class="bg-card p-6 rounded-lg border border-transparent hover:border-accent-red transition-colors duration-300 interactive">
+                        <i class="fas fa-eye text-4xl text-accent-red mb-4"></i>
+                        <h3 class="text-xl mb-2 normal-case">Computer Vision</h3>
+                        <p class="text-sm normal-case">Enabling machines to interpret and understand visual information from the world.</p>
+                    </div>
+                </div>
+                <div class="text-center mt-12">
+                    <a href="research.html" class="glow-button py-3 px-8 rounded-md font-bold uppercase tracking-wider inline-flex items-center justify-center transition-all duration-300 text-lg group">
+                        <i class="fas fa-chevron-right mr-3"></i> Dive Deeper
+                    </a>
+                </div>
+            </section>
+
+            <!-- Featured Projects Section -->
+            <section id="projects" class="py-10">
+                <h2 class="text-3xl font-bold mb-8 text-center"><span class="text-accent">//</span> Featured Projects</h2>
+                <div class="max-w-5xl mx-auto grid sm:grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Project 1 -->
+                    <div class="project-card bg-card p-6 rounded-lg interactive">
+                        <img src="https://miro.medium.com/v2/resize:fit:1400/1*D_cQ1GqYd20p_T22t0j0qA.gif" alt="Deep RL Agent GIF" class="rounded-md mb-4 w-full h-48 object-cover" loading="lazy">
+                        <div class="project-content">
+                            <h3 class="text-xl mb-2 normal-case">AI for Medical Imaging</h3>
+                            <p class="mb-4 text-sm project-description normal-case">
+                                Developing a deep learning model for early-stage cancer detection in medical scans, aiming to improve diagnostic accuracy and patient outcomes.
+                            </p>
+                            <a href="projects.html" class="text-accent-red hover:underline mt-auto font-bold">
+                                Learn More <i class="fas fa-arrow-right ml-1 text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="project-card bg-card p-6 rounded-lg interactive">
+                         <img src="https://assets-global.website-files.com/600fe6e1ff56023533493776/6034177044a67b73c71c1837_6019651558955a00010ab52c_Isaac_Sim_release_on_Omniverse_main.gif" alt="Isaac Sim GIF" class="rounded-md mb-4 w-full h-48 object-cover" loading="lazy">
+                        <div class="project-content">
+                            <h3 class="text-xl mb-2 normal-case">Autonomous Drone Navigation</h3>
+                            <p class="mb-4 text-sm project-description normal-case">
+                                Training autonomous drones using Deep Reinforcement Learning in photorealistic simulations to navigate complex, GPS-denied environments.
+                            </p>
+                            <a href="projects.html" class="text-accent-red hover:underline mt-auto font-bold">
+                                Learn More <i class="fas fa-arrow-right ml-1 text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="text-center py-8 border-t border-border-color">
+            <p class="text-sm">&copy; <span id="current-year"></span> Cognitive Robotics Lab. All Rights Reserved.</p>
+            <p class="text-xs mt-1">Last Transmission: <span id="current-time"></span></p>
+        </footer>
+    </div>
+
+    <!-- Custom Cursor Elements -->
+    <div id="cursor-dot"></div>
+    <div id="cursor-outline"></div>
+
+    <!-- Custom JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

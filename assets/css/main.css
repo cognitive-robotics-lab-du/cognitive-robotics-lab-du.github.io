@@ -1,0 +1,461 @@
+/**
+ * main.css
+ *
+ * Primary styles for the Cognitive Robotics Lab website
+ * NASA-inspired tech theme with custom cursor and interactive elements
+ */
+
+/* --- NASA-INSPIRED TECH THEME --- */
+
+/* Define CSS variables for dark theme (Mission Control vibe) */
+html[data-theme='dark'] {
+    --background-color: #0d1117;  /* Deep space blue/black */
+    --primary-color: #e6edf3;     /* Off-white for primary text */
+    --secondary-color: #8b949e;   /* Lighter gray for secondary text */
+    --accent-red: #FC3D21;        /* NASA "worm" logo red */
+    --accent-blue: #0B3D91;       /* NASA blue */
+    --card-bg: #161b22;           /* Slightly lighter card background */
+    --border-color: #30363d;      
+    --nav-bg-opacity: 0.85;
+    --hero-overlay-color: rgba(13, 17, 23, 0.7); /* Dark overlay for hero */
+}
+
+/* Define CSS variables for light theme (Clean Room/Blueprint vibe) */
+html[data-theme='light'] {
+    --background-color: #f0f2f5;
+    --primary-color: #1c1e21;
+    --secondary-color: #5a6978;
+    --accent-red: #d93622;
+    --accent-blue: #093175;
+    --card-bg: #ffffff;
+    --border-color: #c8d0d9;
+    --nav-bg-opacity: 0.85;
+    --hero-overlay-color: rgba(240, 242, 245, 0.6);
+}
+
+/* --- BASE STYLES --- */
+body {
+    font-family: 'Roboto Mono', monospace; 
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    line-height: 1.7;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: none; /* Hide default cursor */
+    background-image: radial-gradient(var(--secondary-color) 0.5px, transparent 0.5px);
+    background-size: 20px 20px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Orbitron', sans-serif;
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.text-accent { color: var(--accent-red); transition: color 0.3s ease; }
+.bg-card { background-color: var(--card-bg); transition: background-color 0.3s ease; }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* --- HERO SECTION --- */
+.hero-bg {
+    position: relative;
+}
+
+.hero-background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.hero-background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--hero-overlay-color);
+    z-index: 1;
+    transition: background-color 0.3s ease;
+}
+
+.hero-bg > div {
+    position: relative;
+    z-index: 3;
+}
+
+.hero-bg h1, .hero-bg p {
+    color: var(--text-primary);
+    animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+html[data-theme='dark'] .hero-bg h1, 
+html[data-theme='dark'] .hero-bg p {
+    color: #ffffff;
+}
+
+/* --- NAVIGATION --- */
+#nav-wrapper {
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* --- INTERACTIVE ELEMENTS --- */
+.interactive.project-card, 
+.interactive.education-card, 
+.interactive.research-card, 
+.interactive.team-card, 
+.interactive.publication-card,
+.interactive {
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+    position: relative;
+    backdrop-filter: blur(5px);
+}
+
+/* Neon glow effect for all interactive elements */
+.interactive.project-card:hover, 
+.interactive.education-card:hover, 
+.interactive.research-card:hover, 
+.interactive.team-card:hover, 
+.interactive.publication-card:hover,
+.interactive:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 
+        0 0 5px var(--accent-red),
+        0 0 10px var(--accent-red),
+        0 0 15px var(--accent-red),
+        inset 0 0 5px rgba(252, 61, 33, 0.05);
+    border-color: var(--accent-red);
+    background: linear-gradient(135deg, 
+        var(--card-bg) 0%, 
+        rgba(252, 61, 33, 0.02) 50%, 
+        var(--card-bg) 100%);
+}
+
+/* Enhanced neon effect for project cards */
+.interactive.project-card:hover {
+    box-shadow: 
+        0 0 6px var(--accent-red),
+        0 0 12px var(--accent-red),
+        0 0 18px var(--accent-red),
+        inset 0 0 6px rgba(252, 61, 33, 0.06);
+}
+
+/* Neon effect for team cards */
+.interactive.team-card:hover {
+    box-shadow: 
+        0 0 5px var(--accent-red),
+        0 0 10px var(--accent-red),
+        0 0 15px var(--accent-red),
+        inset 0 0 5px rgba(252, 61, 33, 0.05);
+}
+
+/* Neon effect for publication cards */
+.interactive.publication-card:hover {
+    box-shadow: 
+        0 0 4px var(--accent-red),
+        0 0 8px var(--accent-red),
+        0 0 10px var(--accent-red),
+        inset 0 0 4px rgba(252, 61, 33, 0.04);
+}
+
+/* Neon effect for research cards */
+.interactive.research-card:hover {
+    box-shadow: 
+        0 0 5px var(--accent-red),
+        0 0 10px var(--accent-red),
+        0 0 15px var(--accent-red),
+        inset 0 0 5px rgba(252, 61, 33, 0.05);
+}
+
+/* Neon effect for education cards */
+.interactive.education-card:hover {
+    box-shadow: 
+        0 0 4px var(--accent-red),
+        0 0 9px var(--accent-red),
+        0 0 12px var(--accent-red),
+        inset 0 0 4px rgba(252, 61, 33, 0.04);
+}
+
+/* Additional neon effect for any box with bg-card class */
+.bg-card.interactive:hover {
+    box-shadow: 
+        0 0 5px var(--accent-red),
+        0 0 10px var(--accent-red),
+        0 0 15px var(--accent-red),
+        inset 0 0 5px rgba(252, 61, 33, 0.05);
+    transform: translateY(-4px) scale(1.01);
+}
+
+/* Add pulsing animation to neon glow */
+@keyframes neonPulse {
+    0% {
+        box-shadow: 
+            0 0 5px var(--accent-red),
+            0 0 10px var(--accent-red),
+            0 0 15px var(--accent-red),
+            inset 0 0 5px rgba(252, 61, 33, 0.05);
+    }
+    50% {
+        box-shadow: 
+            0 0 8px var(--accent-red),
+            0 0 15px var(--accent-red),
+            0 0 22px var(--accent-red),
+            inset 0 0 8px rgba(252, 61, 33, 0.08);
+    }
+    100% {
+        box-shadow: 
+            0 0 5px var(--accent-red),
+            0 0 10px var(--accent-red),
+            0 0 15px var(--accent-red),
+            inset 0 0 5px rgba(252, 61, 33, 0.05);
+    }
+}
+
+.interactive:hover {
+    animation: neonPulse 2s infinite;
+}
+
+/* Reduce animation intensity for some elements */
+.interactive.team-card:hover {
+    animation: neonPulse 3s infinite;
+}
+
+.interactive.publication-card:hover {
+    animation: neonPulse 2.5s infinite;
+}
+
+.interactive.research-card:hover {
+    animation: neonPulse 2.2s infinite;
+}
+
+.project-card .project-content { 
+    flex-grow: 1; 
+    display: flex; 
+    flex-direction: column; 
+}
+
+.project-card .project-description { 
+    flex-grow: 1; 
+}
+
+/* --- BUTTONS --- */
+.glow-button {
+    position: relative; 
+    overflow: hidden; 
+    z-index: 1;
+    border: 1px solid var(--accent-red); 
+    color: var(--accent-red);
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.glow-button:hover {
+    color: var(--background-color); 
+    background-color: var(--accent-red);
+    box-shadow: 0 0 25px var(--accent-red);
+}
+
+.skills-button {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+    border: 1px solid var(--border-color);
+}
+
+.skills-button:hover {
+    transform: scale(1.05);
+    color: var(--accent-red);
+    box-shadow: 0 0 15px var(--accent-red);
+}
+
+/* --- SOCIAL ICONS --- */
+.social-icon {
+    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    color: var(--accent-red);
+    text-shadow: 0 0 10px var(--accent-red);
+}
+
+/* --- CUSTOM CURSOR --- */
+#cursor-dot, #cursor-outline {
+    pointer-events: none; 
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    border-radius: 50%;
+    opacity: 0; 
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    z-index: 9999;
+}
+
+#cursor-dot { 
+    width: 8px; 
+    height: 8px; 
+    background-color: #ffffff; 
+}
+
+#cursor-outline { 
+    width: 40px; 
+    height: 40px; 
+    border: 2px solid #ffffff; 
+    opacity: 0.3; 
+    transition: all 0.1s ease-out; 
+}
+
+body:hover #cursor-dot, 
+body:hover #cursor-outline { 
+    opacity: 1; 
+}
+
+a:hover ~ #cursor-outline, 
+button:hover ~ #cursor-outline, 
+.interactive:hover ~ #cursor-outline { 
+    transform: translate(-50%, -50%) scale(1.5); 
+    opacity: 0.4; 
+    box-shadow: 0 0 15px #ffffff; 
+}
+
+a:hover ~ #cursor-dot, 
+button:hover ~ #cursor-dot, 
+.interactive:hover ~ #cursor-dot { 
+    transform: translate(-50%, -50%) scale(0.7); 
+}
+
+/* --- TIMELINE --- */
+.timeline-container { 
+    position: relative; 
+    padding-left: 20px; 
+}
+
+.timeline-container::before {
+    content: ''; 
+    position: absolute; 
+    left: 10px; 
+    top: 0; 
+    bottom: 0;
+    width: 2px; 
+    background-color: var(--border-color); 
+    z-index: 0;
+}
+
+.timeline-item { 
+    position: relative; 
+    margin-bottom: 3rem; 
+    padding-left: 20px; 
+    display: flex; 
+    align-items: flex-start; 
+}
+
+.timeline-dot {
+    width: 16px; 
+    height: 16px; 
+    border: 2px solid var(--accent-red);
+    background-color: var(--background-color); 
+    position: absolute;
+    left: 0; 
+    top: 5px; 
+    transform: translateX(-50%); 
+    border-radius: 50%;
+    z-index: 2; 
+    transition: all 0.3s ease;
+}
+
+.timeline-item:hover .timeline-dot { 
+    background-color: var(--accent-red); 
+    box-shadow: 0 0 10px var(--accent-red); 
+}
+
+.education-card { 
+    margin-left: 10px; 
+    width: calc(100% - 30px); 
+    flex-grow: 1; 
+}
+
+/* --- SECTIONS --- */
+.section-divider {
+    border-bottom: 1px solid var(--border-color);
+    position: relative;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+}
+
+.section-divider::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: var(--accent-red);
+}
+
+.section-divider:last-of-type {
+    border-bottom: none;
+}
+
+/* --- FIXED ELEMENTS --- */
+#signature-logo {
+    position: fixed; 
+    top: 1.5rem; 
+    left: 1.5rem; 
+    width: 150px; 
+    height: auto;
+    z-index: 1000; 
+    transition: filter 0.3s ease, opacity 0.5s ease-in-out;
+}
+
+html[data-theme='dark'] #signature-logo { 
+    filter: invert(1); 
+}
+
+#theme-toggle {
+    position: fixed; 
+    top: 1.5rem; 
+    right: 1.5rem; 
+    z-index: 1000;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* --- RESPONSIVE DESIGN --- */
+@media (max-width: 768px) {
+    .timeline-container { padding-left: 0; }
+    .timeline-container::before, .timeline-dot { display: none; }
+    .timeline-item { padding-left: 0; margin-bottom: 1.5rem; }
+    .education-card { margin-left: 0; width: 100%; }
+    #signature-logo { width: 120px; top: 1rem; left: 1rem; }
+    #theme-toggle { top: 1rem; right: 1rem; }
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications | Cognitive Robotics Lab</title>
+    
+    <!-- Meta Information -->
+    <meta name="description" content="Access the peer-reviewed publications and scholarly articles from the researchers at Cognitive Robotics Lab.">
+    <meta name="keywords" content="AI Publications, Machine Learning Papers, Research Papers, Computer Vision, Healthcare AI, Robotics Research">
+
+    <!-- External Dependencies -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body class="antialiased">
+
+    <!-- Signature Logo -->
+    <a href="index.html">
+        <img src="assets/images/logo.png" alt="Lab Logo" id="signature-logo" class="interactive">
+    </a>
+    
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle" class="hover:text-accent-red transition-colors duration-200 text-2xl focus:outline-none interactive">
+        <!-- Icon is set by JS -->
+    </button>
+
+    <!-- Main Content -->
+    <div id="main-content">
+        <!-- Header -->
+        <header class="relative w-full h-[60vh] overflow-hidden">
+            <!-- Full-width Background Image -->
+            <div class="absolute inset-0 w-full h-full">
+                <img src="https://images.pexels.com/photos/267507/pexels-photo-267507.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                     alt="Publications Background" 
+                     class="w-full h-full object-cover">
+                <!-- Dark Overlay for better text visibility -->
+                <div class="absolute inset-0 bg-black/50"></div>
+            </div>
+            
+            <!-- Centered Content -->
+            <div class="relative z-10 w-full h-full flex items-center justify-center text-center">
+                <div class="px-8">
+                    <h1 class="text-5xl md:text-7xl font-bold tracking-wider mb-4 text-white">PUBLICATION ARCHIVES</h1>
+                    <p class="text-xl md:text-2xl font-['Roboto_Mono'] normal-case text-gray-200">Our Contributions to the Scientific Community</p>
+                </div>
+            </div>
+        </header>
+
+        <main class="container">
+            <!-- Navigation Bar Wrapper -->
+             <div id="nav-wrapper" class="sticky top-0 z-50 py-4 mb-10">
+                <nav class="max-w-5xl mx-auto bg-card/85 backdrop-blur-md rounded-lg border border-border-color shadow-md">
+                    <div class="max-w-7xl mx-auto px-4">
+                        <div class="flex justify-center items-center">
+                            <!-- Desktop Menu -->
+                            <div class="hidden md:flex items-center">
+                                <ul class="flex items-center space-x-4 lg:space-x-6 text-sm py-2">
+                                    <li><a href="index.html" class="hover:text-primary-color transition-colors duration-200">Home</a></li>
+                                    <li><a href="research.html" class="hover:text-primary-color transition-colors duration-200">Research</a></li>
+                                    <li><a href="projects.html" class="hover:text-primary-color transition-colors duration-200">Projects</a></li>
+                                    <li><a href="publications.html" class="text-primary-color transition-colors duration-200">Publications</a></li>
+                                    <li><a href="team.html" class="hover:text-primary-color transition-colors duration-200">Team</a></li>
+                                    <li><a href="contact.html" class="hover:text-primary-color transition-colors duration-200">Contact</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Mobile Menu Button -->
+                            <div class="md:hidden flex items-center w-full justify-center py-2">
+                                <button id="mobile-menu-button" class="hover:text-accent-red transition-colors duration-200 text-2xl focus:outline-none">
+                                    <i class="fas fa-bars"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Menu -->
+                    <div id="mobile-menu" class="hidden md:hidden">
+                        <ul class="flex flex-col items-center space-y-4 py-4 border-t border-border-color">
+                           <li><a href="index.html" class="hover:text-primary-color transition-colors duration-200">Home</a></li>
+                           <li><a href="research.html" class="hover:text-primary-color transition-colors duration-200">Research</a></li>
+                           <li><a href="projects.html" class="hover:text-primary-color transition-colors duration-200">Projects</a></li>
+                           <li><a href="publications.html" class="hover:text-primary-color transition-colors duration-200">Publications</a></li>
+                           <li><a href="team.html" class="hover:text-primary-color transition-colors duration-200">Team</a></li>
+                           <li><a href="contact.html" class="hover:text-primary-color transition-colors duration-200">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- Publications List -->
+            <section id="publications-list" class="py-10">
+                <div class="max-w-5xl mx-auto space-y-8">
+
+                    <!-- Publication Entry -->
+                    <div class="bg-card p-6 rounded-lg border border-border-color interactive publication-card">
+                        <h3 class="text-lg font-bold text-primary-color normal-case">
+                            <a href="#" class="hover:text-accent-red transition-colors">Graph convolutional networks for assessment of physical rehabilitation exercises</a>
+                        </h3>
+                        <p class="text-sm mt-1 normal-case">S Deb, MF Islam, S Rahman, S Rahman</p>
+                        <p class="text-sm text-secondary-color mt-2 italic">IEEE Transactions on Neural Systems and Rehabilitation Engineering 30, 410-419, 2022</p>
+                        <div class="mt-3 flex items-center gap-4 text-sm">
+                            <span class="font-bold text-accent-red">Cited by 74</span>
+                            <a href="#" class="social-icon"><i class="ai ai-google-scholar"></i></a>
+                            <a href="#" class="social-icon"><i class="fas fa-file-pdf"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Publication Entry -->
+                    <div class="bg-card p-6 rounded-lg border border-border-color interactive publication-card">
+                        <h3 class="text-lg font-bold text-primary-color normal-case">
+                            <a href="#" class="hover:text-accent-red transition-colors">AI-driven Stroke Rehabilitation Systems and Assessment: A Systematic Review</a>
+                        </h3>
+                        <p class="text-sm mt-1 normal-case">S Rahman, S Sarker, AKMN Haque, MM Uttsha, MF Islam, S Deb</p>
+                        <p class="text-sm text-secondary-color mt-2 italic">IEEE Transactions on Neural Systems and Rehabilitation Engineering, 2022</p>
+                        <div class="mt-3 flex items-center gap-4 text-sm">
+                            <span class="font-bold text-accent-red">Cited by 67</span>
+                            <a href="#" class="social-icon"><i class="ai ai-google-scholar"></i></a>
+                            <a href="#" class="social-icon"><i class="fas fa-file-pdf"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Publication Entry -->
+                    <div class="bg-card p-6 rounded-lg border border-border-color interactive publication-card">
+                        <h3 class="text-lg font-bold text-primary-color normal-case">
+                            <a href="#" class="hover:text-accent-red transition-colors">Deep learning–driven automated detection of Covid-19 from radiography images: A comparative analysis</a>
+                        </h3>
+                        <p class="text-sm mt-1 normal-case">S Rahman, S Sarker, MAA Miraj, RA Nihal, AKM Nadimul Haque, ...</p>
+                        <p class="text-sm text-secondary-color mt-2 italic">Cognitive Computation, 1-30, 2021</p>
+                        <div class="mt-3 flex items-center gap-4 text-sm">
+                            <span class="font-bold text-accent-red">Cited by 50</span>
+                            <a href="#" class="social-icon"><i class="ai ai-google-scholar"></i></a>
+                            <a href="#" class="social-icon"><i class="fas fa-file-pdf"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Publication Entry -->
+                    <div class="bg-card p-6 rounded-lg border border-border-color interactive publication-card">
+                        <h3 class="text-lg font-bold text-primary-color normal-case">
+                            <a href="#" class="hover:text-accent-red transition-colors">Bangla sign alphabet recognition with zero-shot and transfer learning</a>
+                        </h3>
+                        <p class="text-sm mt-1 normal-case">RA Nihal, S Rahman, NM Broti, SA Deowan</p>
+                        <p class="text-sm text-secondary-color mt-2 italic">Pattern Recognition Letters 150, 84-93, 2021</p>
+                        <div class="mt-3 flex items-center gap-4 text-sm">
+                            <span class="font-bold text-accent-red">Cited by 45</span>
+                            <a href="#" class="social-icon"><i class="ai ai-google-scholar"></i></a>
+                            <a href="#" class="social-icon"><i class="fas fa-file-pdf"></i></a>
+                        </div>
+                    </div>
+                    
+                     <!-- Publication Entry -->
+                    <div class="bg-card p-6 rounded-lg border border-border-color interactive publication-card">
+                        <h3 class="text-lg font-bold text-primary-color normal-case">
+                            <a href="#" class="hover:text-accent-red transition-colors">Automated detection approaches to autism spectrum disorder based on human activity analysis: A review</a>
+                        </h3>
+                        <p class="text-sm mt-1 normal-case">S Rahman, SF Ahmed, O Shahid, MA Arrafi, MAR Ahad</p>
+                        <p class="text-sm text-secondary-color mt-2 italic">Cognitive Computation 14 (5), 1773-1800, 2022</p>
+                        <div class="mt-3 flex items-center gap-4 text-sm">
+                            <span class="font-bold text-accent-red">Cited by 32</span>
+                            <a href="#" class="social-icon"><i class="ai ai-google-scholar"></i></a>
+                            <a href="#" class="social-icon"><i class="fas fa-file-pdf"></i></a>
+                        </div>
+                    </div>
+                    
+                     <!-- Publication Entry -->
+                    <div class="bg-card p-6 rounded-lg border border-border-color interactive publication-card">
+                        <h3 class="text-lg font-bold text-primary-color normal-case">
+                            <a href="#" class="hover:text-accent-red transition-colors">Design and development of a humanoid robot for sign language interpretation</a>
+                        </h3>
+                        <p class="text-sm mt-1 normal-case">RA Nihal, NM Broti, SA Deowan, S Rahman</p>
+                        <p class="text-sm text-secondary-color mt-2 italic">SN Computer Science 2, 1-17, 2021</p>
+                        <div class="mt-3 flex items-center gap-4 text-sm">
+                            <span class="font-bold text-accent-red">Cited by 20</span>
+                            <a href="#" class="social-icon"><i class="ai ai-google-scholar"></i></a>
+                            <a href="#" class="social-icon"><i class="fas fa-file-pdf"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+        <footer class="text-center py-8 border-t border-border-color">
+            <p class="text-sm">&copy; <span id="current-year"></span> Cognitive Robotics Lab. All Rights Reserved.</p>
+            <p class="text-xs mt-1">Last Transmission: <span id="current-time"></span></p>
+        </footer>
+    </div>
+
+    <!-- Custom Cursor Elements -->
+    <div id="cursor-dot"></div>
+    <div id="cursor-outline"></div>
+
+    <!-- Custom JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
