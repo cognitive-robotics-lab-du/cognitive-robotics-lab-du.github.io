@@ -432,7 +432,7 @@ button:hover ~ #cursor-dot,
     position: fixed; 
     top: 1.5rem; 
     left: 1.5rem; 
-    width: 100px; 
+    width: 75px; 
     height: auto;
     z-index: 1000; 
     transition: filter 0.3s ease, opacity 1s ease-in-out;
