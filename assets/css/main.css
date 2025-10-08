@@ -432,10 +432,10 @@ button:hover ~ #cursor-dot,
     position: fixed; 
     top: 1.5rem; 
     left: 1.5rem; 
-    width: 75px; 
+    width: 50px; 
     height: auto;
     z-index: 1000; 
-    transition: filter 0.3s ease, opacity 1s ease-in-out;
+    transition: filter 0.3s ease, opacity 0.5s ease-in-out;
 }
 
 html[data-theme='dark'] #signature-logo { 
